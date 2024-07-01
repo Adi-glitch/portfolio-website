@@ -11,40 +11,41 @@ const MainSection = () => {
   return (
         <section className='border-b border-neutral-900 pb-4'>
             <div className="grid grid-cols-1 sm:grid-cols-12">
-                <div className="col-span-7 place-self-center text-center sm:text-left">   
-                    <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.7 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                     >
+                    <div className="col-span-7 place-self-center text-center sm:text-left">   
                     
-                    <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                            Hello, I&apos;m{" "} 
-                        </span>
-                        <br></br>
-                        <TypeAnimation
-                            sequence={[
-                                // Same substring at the start will only be typed out once, initially
-                                'Aditya Nayak',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                'Software Engineer',
-                                1000,
-                                'ML Engineer',
-                                1000,
-                                // 'Prospective Robotics Engineer',
-                                // 1000
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                            />
-                    </h1>
-                    {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                        voluptuous.
-                    </p> */}
+                    
+                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                                Hello, I&apos;m{" "} 
+                            </span>
+                            <br></br>
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed out once, initially
+                                    'Aditya Nayak',
+                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    'Software Engineer',
+                                    1000,
+                                    'ML Engineer',
+                                    1000,
+                                    // 'Prospective Robotics Engineer',
+                                    // 1000
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                repeat={Infinity}
+                                />
+                        </h1>
+                    </div>    
+                    <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                        Hello! Welcome to Aditya's Education and Career History
+                    </p>
                     <div>
                         <Link
                         href="/#contact"
@@ -62,8 +63,7 @@ const MainSection = () => {
                         </Link>
                     </div>
 
-                    </motion.div>
-                </div>
+                </motion.div>
                 <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
