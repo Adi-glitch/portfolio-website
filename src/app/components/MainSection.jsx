@@ -44,7 +44,7 @@ const MainSection = () => {
                         </h1>
                     </div>    
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Hello! Welcome to Aditya's Education and Career History
+                        Hello! Welcome to Aditya&apos;s Education and Career History
                     </p>
                     <div>
                         <Link
